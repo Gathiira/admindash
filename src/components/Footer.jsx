@@ -9,6 +9,7 @@ import {
 } from "@material-ui/icons";
 import styled from "styled-components";
 import { mobile } from "../responsive";
+import { MdPayment} from 'react-icons/md'
 
 const Container = styled.div`
   display: flex;
@@ -88,7 +89,7 @@ const Footer = () => {
   return (
     <Container>
       <Left>
-        <Logo>LAMA.</Logo>
+        <Logo>BOOK EXCHANGE STORE</Logo>
         <Desc>
           There are many variations of passages of Lorem Ipsum available, but
           the majority have suffered alteration in some form, by injected
@@ -135,7 +136,9 @@ const Footer = () => {
         <ContactItem>
           <MailOutline style={{marginRight:"10px"}} /> contact@lama.dev
         </ContactItem>
-        <Payment src="https://i.ibb.co/Qfvn4z6/payment.png" />
+        <div className="flex items-center gap-2 mb-[20px]">
+          <MdPayment className="w-6 h-6" /><span>Payment</span>
+        </div>
       </Right>
     </Container>
   );

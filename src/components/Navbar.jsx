@@ -71,14 +71,13 @@ const Navbar = () => {
     <Container>
       <Wrapper>
         <Left>
-          <Language>EN</Language>
           <SearchContainer>
             <Input placeholder="Search" />
             <Search style={{ color: "gray", fontSize: 16 }} />
           </SearchContainer>
         </Left>
         <Center>
-          <Logo>LAMA.</Logo>
+          <Logo className="text-2xl">Book Exchange Store</Logo>
         </Center>
         <Right>
           <MenuItem>REGISTER</MenuItem>
